@@ -5,14 +5,16 @@ categories: jekyll update
 ---
 
 
+'''
 s = DispatchSemaphore(value: 1)
+'''
 
 value 는 동시에 접근할 수 있는 thread의 수 라고 생각하면 되는 듯 싶다.
 
-wait()
+'''s.wait()'''
   semaphore의 value 를 1씩 낮추고, value가 음수가 되면 value가 0 이상이 될 때 까지 busy waiting을 한다.
   
-signal()
+'''s.signal()'''
   semaphore의 value 를 1씩 올린다
   
 위의 경우 value가 1인 상태로 선언했으므로, 처음으로 s.wait()을 사용한 thread는 바로 value를 0으로 낮추고 멈추지 않는다.
