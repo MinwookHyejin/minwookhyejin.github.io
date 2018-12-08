@@ -1,7 +1,7 @@
 ---
 title: "swift 4에서 Semaphore 사용"
 date: 2018-12-09 01:25:28 +0900
-categories: jekyll update
+categories: swift semaphore
 ---
 
 
