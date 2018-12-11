@@ -31,6 +31,10 @@ api gateway를 통한 https request가 간혈적으로 timeout error를 띄우�
 
 
 
+
+
+
+
   2. django
   
 django 의 경우, AWS 에서 공식 지원하는 python x-ray sdk가 있다.
@@ -47,6 +51,9 @@ MIDDLEWARE = [
 실패한 요청까지 포함해 모든 요청을 로깅하기 위해 middleware 최상단에 넣어준다.
 
 
+
+
+
 ```
 INSTALLED_APPS = [
     ...
@@ -54,6 +61,9 @@ INSTALLED_APPS = [
 ]
 ```
 installed_apps에 추가
+
+
+
 
 ```
 XRAY_RECORDER = {
@@ -77,6 +87,10 @@ daemon process가 log를 수집했다가 어느정도 쌓이면 한번에 업로
 zappa를 통해 업로드 된 aws lambda 환경에서 구동될 것이기 때문에 localhost:2000 을 사용한다. 기본 값이다.
 
 출처 : (https://docs.aws.amazon.com/xray-sdk-for-python/latest/reference/)
+
+
+
+
 
 
 
