@@ -80,9 +80,9 @@ XRAY_RECORDER = {
 ```
 레코더 설정이다. 뭐가 뭔지 잘 모르겠어서 그냥 적용시키자는 생각에 그대로 입력했다.
 
-daemon address는, x-ray를 logging 할 때 마다 http로 업로드할 경우 부하가 커지니까 deamon process란 것을 실행시켜 두는데,
+daemon address :  x-ray를 logging 할 때 마다 http로 업로드할 경우 부하가 커지니까 deamon process란 것을 실행시켜 두는데, daemon process가 log를 수집했다가 어느정도 쌓이면 한번에 업로드한다.
 
-daemon process가 log를 수집했다가 어느정도 쌓이면 한번에 업로드한다. 그 daemon process가 실행되는 위치인데, 
+그 daemon process가 실행되는 ip주소이다. 
 
 zappa를 통해 업로드 된 aws lambda 환경에서 구동될 것이기 때문에 localhost:2000 을 사용한다. 기본 값이다.
 
