@@ -94,7 +94,7 @@ zappa를 통해 업로드 된 aws lambda 환경에서 구동될 것이기 때문
 
 
 
-그대로 적용한 결과 zappa scheduling(일정한 주기마다 django 내의 함수를 실행시켜준다) 을 통한 사용은 log 가 잘 남,
+그대로 적용한 결과 zappa scheduling(일정한 주기마다 django 내의 함수를 실행시켜준다) 을 통한 사용은 log 가 잘 남지만,
 
 api gateway를 통한 https request들은 logging이 안되는 문제가 발생했다.
 
